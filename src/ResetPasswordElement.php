@@ -1,4 +1,4 @@
-<?php namespace WYD\CustomElements;
+<?php namespace Jammer\ResetPasswordElement;
 
 use SleepingOwl\Admin\Form\Element\Password;
 use Validator;
@@ -12,7 +12,7 @@ class ResetPasswordElement extends Password
 		$params = $this->toArray();
 		$params['value'] = '';
 
-		$view = view('resetPasswordElement::resetPassword')
+		$view = view('ResetPasswordElement::ResetPassword')
 			->with($params)->render();
 
 		return $view;

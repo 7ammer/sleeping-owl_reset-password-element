@@ -1,11 +1,6 @@
-<?php namespace	Jai\Contact;
-/**
- *
- * @author kora jai <kora.jayaram@gmail>
- */
+<?php namespace	Jammer\ResetPasswordElement;
+
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Routing\Router;
-use Jammer\ResetPasswordElement\ResetPasswordElement;
 
 class ResetPasswordElementServiceProvider extends ServiceProvider {
 	/**
@@ -17,7 +12,7 @@ class ResetPasswordElementServiceProvider extends ServiceProvider {
 
 	public function boot()
 	{
-		$this->loadViewsFrom(realpath(__DIR__.'/../views'), 'resetPasswordElement');
+		$this->loadViewsFrom(realpath(__DIR__.'/../views'), 'ResetPasswordElement');
 	}
 
 	public function register()
