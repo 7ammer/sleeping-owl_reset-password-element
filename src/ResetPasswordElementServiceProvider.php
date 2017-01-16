@@ -1,6 +1,7 @@
 <?php namespace	Jammer\ResetPasswordElement;
 
 use Illuminate\Support\ServiceProvider;
+use SleepingOwl\Admin\Facades\FormElement;
 
 class ResetPasswordElementServiceProvider extends ServiceProvider {
 	/**
