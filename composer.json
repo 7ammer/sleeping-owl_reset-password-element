@@ -7,7 +7,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"ResetPasswordElement\\": "src/"
+			"Jammer\\ResetPasswordElement\\": "src/"
 		}
 	},
 	"scripts": {
