@@ -5,6 +5,8 @@
  */
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;
+use Jammer\ResetPasswordElement\ResetPasswordElement;
+
 class ResetPasswordElementServiceProvider extends ServiceProvider {
 	/**
 	 * Indicates if loading of the provider is deferred.
@@ -20,16 +22,8 @@ class ResetPasswordElementServiceProvider extends ServiceProvider {
 
 	public function register()
 	{
-		$this->registerContact();
-		config([
-			'config/contact.php',
+		AdminFormElement::register([
+			'resetPassword' => ResetPasswordElement::class,
 		]);
-	}
-
-	private function registerContact()
-	{
-		$this->app->bind('contact',function($app){
-			return new Contact($app);
-		});
 	}
 }
