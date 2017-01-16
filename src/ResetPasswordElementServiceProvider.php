@@ -13,7 +13,7 @@ class ResetPasswordElementServiceProvider extends ServiceProvider {
 
 	public function boot()
 	{
-		$this->loadViewsFrom(realpath(__DIR__.'/../views'), 'ResetPasswordElement');
+		$this->loadViewsFrom(realpath(__DIR__.'/views'), 'ResetPasswordElement');
 	}
 
 	public function register()
