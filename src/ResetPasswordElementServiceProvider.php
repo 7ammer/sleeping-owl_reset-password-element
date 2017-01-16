@@ -17,7 +17,7 @@ class ResetPasswordElementServiceProvider extends ServiceProvider {
 
 	public function register()
 	{
-		AdminFormElement::register([
+		FormElement::register([
 			'resetPassword' => ResetPasswordElement::class,
 		]);
 	}
