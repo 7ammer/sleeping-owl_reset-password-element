@@ -1,0 +1,18 @@
+{
+	"name": "jammer/sitewide-snippets",
+	"source": {
+		"type": "git",
+		"url": "git@github.com:7ammer/sleeping-owl_reset-password-element.git",
+		"reference": "master"
+	},
+	"autoload": {
+		"psr-4": {
+			"ResetPasswordElement\\": "src/"
+		}
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"php artisan vendor:publish --provider=\"jammer\\sitewide-snippets\\SitewideSnippetsServiceProvider\""
+		]
+	}
+}
